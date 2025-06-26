@@ -37,7 +37,6 @@ app.use(
 app.use(express.json()); // to parse req.body
 //app.use(clerkMiddleware()); // this will add auth to req obj => req.auth
 
-app.use("/api", userRoutes, adminRoutes, authRoutes, songRoutes, albumRoutes, statRoutes);
 app.use(clerkMiddleware({}));
 
 app.use(
