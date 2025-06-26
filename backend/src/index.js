@@ -35,9 +35,9 @@ app.use(
 );
 
 app.use(express.json()); // to parse req.body
-//app.use(clerkMiddleware()); // this will add auth to req obj => req.auth
+app.use(clerkMiddleware()); // this will add auth to req obj => req.auth
 
-app.use(clerkMiddleware({}));
+//app.use(clerkMiddleware({}));
 
 app.use(
 	fileUpload({
