@@ -7,6 +7,9 @@
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
 		"start": "npm start --prefix backend"
   },
+  "engines": {
+    "node": "20.12.2"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
